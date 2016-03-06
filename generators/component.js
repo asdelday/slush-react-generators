@@ -1,6 +1,6 @@
 'use strict';
 
-var _ = require('underscore.string');
+var _ = require('lodash');
 var conflict = require('gulp-conflict');
 var gulp = require('gulp');
 var inquirer = require('inquirer');
@@ -37,16 +37,18 @@ module.exports = function(done) {
   inquirer.prompt(prompts, function (answers) {
     if (!answers.name) { return done(); }
 
-    answers.slugifiedName = _.slugify(answers.name);
-    answers.humanizedName = _.humanize(answers.name);
+    answers.slugifiedName = _.kebabCase(answers.name);
     answers.capitalizedAuthor = _.capitalize(answers.author);
 
     gulp.src(__dirname + '/../templates/component/**/*')
       .pipe(template(answers, {interpolate: /<\?\?(.+?)\?>/g}))
       .pipe(rename(function (file) {
         console.log(file);
-        if (file.basename[0] === '_') {
-          file.basename = '.' + file.basename.slice(1);
+        if (file.basename.indexOf('_') == 0) {
+          file.basename = file.basename.replace('_', '.');
+        }
+        if (file.basename.indexOf('slushName') == 0) {
+          file.basename = file.basename.replace('slushName', answers.name);
         }
       }))
       .pipe(conflict('./'))

@@ -1,10 +1,8 @@
 /**
  * Component Library Output
  */
-import DumbCounter from './DumbCounter';
-import ButtonComponent from './ButtonComponent';
+import <?? name ?> from './<?? name ?>';
 
 export {
-  DumbCounter as default,
-  ButtonComponent,
+  <?? name ?> as default,
 };

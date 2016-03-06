@@ -23,6 +23,7 @@
     "reactjs",
     "generator",
     "slush",
+    "slushgenerator",
     "redux",
     "Node",
     "component",

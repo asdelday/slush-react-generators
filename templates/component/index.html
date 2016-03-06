@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script src="./node_modules/react/dist/react.min.js"></script>
+  <script src="node_modules/react-dom/dist/react-dom.min.js"></script>
+  <script src="./dist/<?? slugifiedName ?>.min.js"></script>
+  <script>
+    var data = {
+      initialValue: 50,
+      minValue: 0,
+      maxValue: 100,
+      step: 2,
+    };
+
+    var app = document.createElement('div');
+    window.document.body.appendChild(app);
+    ReactDOM.render(React.createElement(<<? name ?>.default, data), app);
+  </script>
+</body>
+</html>

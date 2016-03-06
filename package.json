@@ -1,18 +1,18 @@
 {
-  "name": "react-generators",
+  "name": "slush-react-generators",
   "description": "React Slush generators.",
   "main": "slushfile.js",
   "version": "0.0.0",
   "license": "MIT",
   "author": "Rodrigo Ortega Cuesta <rodortcue@gmail.com> (http://github.com/asdelday)",
   "user": "asdelday",
-  "homepage": "https://github.com/asdelday/react-generators",
+  "homepage": "https://github.com/asdelday/slush-react-generators",
   "repository": {
     "type": "git",
-    "url": "https://github.com/asdelday/react-generators.git"
+    "url": "https://github.com/asdelday/slush-react-generators.git"
   },
   "bugs": {
-    "url": "https://github.com/asdelday/react-generators/issues"
+    "url": "https://github.com/asdelday/slush-react-generators/issues"
   },
   "engines": {
     "node": ">=5 <6",

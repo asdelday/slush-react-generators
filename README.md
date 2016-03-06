@@ -1,4 +1,4 @@
-# react-dumb-component
+# slush-react-dumb-component
 
 Suite of [React](https://facebook.github.io/react/) generators for
 [slush](http://slushjs.github.io).

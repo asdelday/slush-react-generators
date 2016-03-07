@@ -12,7 +12,7 @@ export default class <?? name ?> extends React.Component {
   };
 
   render() {
-    const { value, className } = this.state;
+    const { className } = this.props;
 
     return (
       <div className={ cx(className, '<?? name ?>') }>

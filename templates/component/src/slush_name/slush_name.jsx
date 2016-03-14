@@ -11,6 +11,10 @@ export default class <?? name ?> extends React.Component {
     className: '',
   };
 
+  componentDidMount() {
+    console.log('mounted'); // eslint-disable-line
+  }
+
   render() {
     const { className } = this.props;
 

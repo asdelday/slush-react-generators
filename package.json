@@ -41,6 +41,9 @@
     "mkdirp": "^0.5.1"
   },
   "scripts": {
-    "test": "echo no tests yet"
+    "test": "echo no tests yet",
+    "version:major": "npm version major -m \"v%s\"",
+    "version:minor": "npm version minor -m \"v%s\"",
+    "version:patch": "npm version patch -m \"v%s\""
   }
 }

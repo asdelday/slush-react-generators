@@ -3,10 +3,6 @@ import { shallow, mount } from 'enzyme';
 import <?? name ?> from './<?? name ?>';
 
 describe('<?? name ?>', function() {
-  it('should do boilerplate things', function() {
-    // TODO: test something now
-    expect(true).to.equal(true);
-  });
   it('should has two ButtonComponent', () => {
     const wrapper = shallow(<<?? name ?> />);
     expect(wrapper.text()).to.contain('<?? name ?>');

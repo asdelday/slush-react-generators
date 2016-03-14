@@ -111,11 +111,9 @@ const config = {
 ```
 
 **Important:** If you are using external dependencies, you will need to include them into webpack
-externals. Like the example below:
+externals. At `/webpack/config.js` Like the example below:
 
 ```javascript
-var webpackConfig = {
-  // Other options ...
   externals: {
     react: {
       commonjs: 'react',
@@ -124,9 +122,6 @@ var webpackConfig = {
       root: 'React',
     },
   }
-  // ... Other options
-}
-
 ```
 
 <div id="license"></div>
